@@ -51,4 +51,4 @@ print()
 print(f"Correctness on the test set: {np.mean(y_pred == y_test):.2f}")
 print(f"Correctness on the test set: {knn.score(X_test, y_test):.2f}")
 
-# plt.show()
+plt.show()

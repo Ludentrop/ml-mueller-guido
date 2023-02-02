@@ -25,12 +25,6 @@ iris_dataset = load_iris()
 
 X_train, X_test, y_train, y_test = train_test_split(iris_dataset['data'], iris_dataset['target'], random_state=0)
 
-print(f'{X_train.shape=}')
-print(f'{y_train.shape=}')
-print()
-print(f'{X_test.shape=}')
-print(f'{y_test.shape=}')
-
 # create dataframe from data of X_train massive
 # mark columns using raws in iris_dataset.feature_names
 iris_dataframe = pd.DataFrame(X_train, columns=iris_dataset.feature_names)
